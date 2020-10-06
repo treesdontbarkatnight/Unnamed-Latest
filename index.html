@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>My Projects</title>
+<style>
+body{
+	background-color: #000000;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+canvas{
+	border-style: solid;
+	border-width: 5px;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.ddlcbutton {
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ff99cc;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.fullscreen {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, 450%);
+  transform: translate(-50%, 450%);
+}
+
+button:hover {background-color: #ff3399}
+</style>
+<canvas class="center" id="mycanvas" width="500" height="400" align="left" style="display: none"></canvas>
+<img src="images/bg/splash_jscript.png" id="splash" width="500" height="400" style="display:none"></img>
+<img src="images/bg/splash_jscript_g.png" id="splashG" width="500" height="400" style="display:none"></img>
+<img src="images/bg/warning.png" id="warning" width="500" height="400" style="display:none"></img>
+<img src="images/bg/residential.png" id="residential" width="500" height="400" style="display:none"></img>
+<img src="images/bg/class.png" id="class" width="500" height="400" style="display:none"></img>
+<img src="images/bg/club.png" id="club" width="500" height="400" style="display:none"></img>
+<img src="images/bg/notebook.png" id="notebook" width="500" height="400" style="display:none"></img>
+<img src="images/bg/noise1.jpg" id="noise1" width="500" height="400" style="display:none"></img>
+<img src="images/bg/noise2.jpg" id="noise2" width="500" height="400" style="display:none"></img>
+<img src="images/bg/noise3.jpg" id="noise3" width="500" height="400" style="display:none"></img>
+<img src="images/bg/noise4.jpg" id="noise4" width="500" height="400" style="display:none"></img>
+<img src="images/cg/s_kill_bg.png" id="s_kill_bg" width="500" height="400" style="display:none"></img>
+<img src="images/cg/s_kill_bg2.png" id="s_kill_bg2" width="500" height="400" style="display:none"></img>
+<img src="images/bg/glitch.jpg" id="glitch" width="500" height="400" style="display:none"></img>
+<img src="images/bg/glitch-blue.png" id="glitch-blue" width="500" height="400" style="display:none"></img>
+<img src="images/bg/glitch-green.png" id="glitch-green" width="500" height="400" style="display:none"></img>
+<img src="images/bg/glitch-red.png" id="glitch-red" width="500" height="400" style="display:none"></img>
+<img src="gui/play_blue.png" id="play_blue" width="500" height="400" style="display:none"></img>
+<img src="gui/settings_blue.png" id="settings_blue" width="500" height="400" style="display:none"></img>
+<img src="gui/logo.png" id="logo" width="500" height="400" style="display:none"></img>
+<img src="gui/settings.png" id="settings" width="500" height="400" style="display:none"></img>
+<img src="gui/play.png" id="play" width="500" height="400" style="display:none"></img>
+<img src="gui/overlay/main_menu.png" id="main_menu" width="500" height="400" style="display:none"></img>
+<img src="gui/menu_art_y.png" id="menu_art_y" width="500" height="400" style="display:none"></img>
+<img src="gui/menu_art_s.png" id="menu_art_s" width="500" height="400" style="display:none"></img>
+<img src="gui/menu_art_s_ghost.png" id="menu_art_s_ghost" width="500" height="400" style="display:none"></img>
+<img src="gui/menu_art_s_break.png" id="menu_art_s_break" width="500" height="400" style="display:none"></img>
+<img src="gui/menu_art_n.png" id="menu_art_n" width="500" height="400" style="display:none"></img>
+<img src="gui/menu_art_m.png" id="menu_art_m" width="500" height="400" style="display:none"></img>
+<img src="gui/menu_bg.png" id="background" width="500" height="400" style="display:none"></img>
+<img src="gui/textbox.png" id="textbox" width="500" height="400" style="display:none"></img>
+<img src="gui/namebox.png" id="namebox" width="500" height="400" style="display:none"></img>
+<img src="gui/poemgame/m_sticker_1.png" id="m_sticker_1" width="500" height="400" style="display:none"></img>
+<img src="gui/poemgame/n_sticker_1.png" id="n_sticker_1" width="500" height="400" style="display:none"></img>
+<img src="gui/poemgame/y_sticker_1.png" id="y_sticker_1" width="500" height="400" style="display:none"></img>
+<img src="gui/poemgame/s_sticker_1.png" id="s_sticker_1" width="500" height="400" style="display:none"></img>
+<img src="gui/poemgame/m_sticker_2.png" id="m_sticker_2" width="500" height="400" style="display:none"></img>
+<img src="gui/poemgame/n_sticker_2.png" id="n_sticker_2" width="500" height="400" style="display:none"></img>
+<img src="gui/poemgame/y_sticker_2.png" id="y_sticker_2" width="500" height="400" style="display:none"></img>
+<img src="gui/poemgame/s_sticker_2.png" id="s_sticker_2" width="500" height="400" style="display:none"></img>
+<img src="gui/poemgame/m_sticker_3.png" id="m_sticker_3" width="500" height="400" style="display:none"></img>
+<img src="gui/poemgame/n_sticker_3.png" id="n_sticker_3" width="500" height="400" style="display:none"></img>
+<img src="gui/poemgame/y_sticker_3.png" id="y_sticker_3" width="500" height="400" style="display:none"></img>
+<img src="gui/poemgame/s_sticker_3.png" id="s_sticker_3" width="500" height="400" style="display:none"></img>
+<!-- Sayori Textures -->
+<img src="images/sayori/1r.png" id="sayori_1r" width="500" height="400" style="display:none"></img>
+<img src="images/sayori/1l.png" id="sayori_1l" width="500" height="400" style="display:none"></img>
+<img src="images/sayori/2r.png" id="sayori_2r" width="500" height="400" style="display:none"></img>
+<img src="images/sayori/2l.png" id="sayori_2l" width="500" height="400" style="display:none"></img>
+<img src="images/sayori/a.png" id="sayori_a" width="500" height="400" style="display:none"></img>
+<img src="images/sayori/p.png" id="sayori_p" width="500" height="400" style="display:none"></img>
+<img src="images/sayori/i.png" id="sayori_i" width="500" height="400" style="display:none"></img>
+<img src="images/cg/s_kill.png" id="s_kill" width="500" height="400" style="display:none"></img>
+<img src="images/cg/s_kill2.png" id="s_kill2" width="500" height="400" style="display:none"></img>
+<!-- Natsuki Textures -->
+<img src="images/natsuki/1r.png" id="natsuki_1r" width="500" height="400" style="display:none"></img>
+<img src="images/natsuki/1l.png" id="natsuki_1l" width="500" height="400" style="display:none"></img>
+<img src="images/natsuki/a.png" id="natsuki_a" width="500" height="400" style="display:none"></img>
+<img src="images/natsuki/i.png" id="natsuki_i" width="500" height="400" style="display:none"></img>
+<!-- Yuri Textures -->
+<img src="images/yuri/1r.png" id="yuri_1r" width="500" height="400" style="display:none"></img>
+<img src="images/yuri/1l.png" id="yuri_1l" width="500" height="400" style="display:none"></img>
+<img src="images/yuri/a.png" id="yuri_a" width="500" height="400" style="display:none"></img>
+<img src="images/yuri/i.png" id="yuri_i" width="500" height="400" style="display:none"></img>
+<!-- Monika Textures -->
+<img src="images/monika/1r.png" id="monika_1r" width="500" height="400" style="display:none"></img>
+<img src="images/monika/1l.png" id="monika_1l" width="500" height="400" style="display:none"></img>
+<img src="images/monika/a.png" id="monika_a" width="500" height="400" style="display:none"></img>
+<img src="images/monika/i.png" id="monika_i" width="500" height="400" style="display:none"></img>
+<audio id="1" muted loop src="bgm/1.ogg" style="visibility: hidden"></audio>
+<audio id="2" muted loop src="bgm/2.ogg" style="visibility: hidden"></audio>
+<audio id="3" muted loop src="bgm/3.ogg" style="visibility: hidden"></audio>
+<audio id="4" muted loop src="bgm/4.ogg" style="visibility: hidden"></audio>
+<audio id="5" muted loop src="bgm/5.ogg" style="visibility: hidden"></audio>
+<audio id="d" muted loop src="bgm/d.ogg" style="visibility: hidden"></audio>
+<audio id="select" muted src="gui/sfx/select.ogg" style="visibility: hidden"></audio>
+<audio id="hover" muted src="gui/sfx/hover.ogg" style="visibility: hidden"></audio>
+<audio id="s_kill_early" muted src="bgm/s_kill_early.ogg" style="visibility: hidden"></audio>
+<script src="src/atomic.lib.js"></script>
+<script src="main.js"></script>
+
+
+
+</head>
+<body>
+<button class="ddlcbutton" type="button" id="ddlc_start" onclick="ddlc_start()">Start DDLC</button>
+<button class="fullscreen" type="button" id="fullscreen" onclick=canvas.webkitRequestFullscreen(); style="display: none">Fullscreen</button>
+</body>
+</html>
