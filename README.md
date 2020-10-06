@@ -7,8 +7,8 @@ This build contains content that may be very abscene and is not sutible for chil
 Do not view the images/gui folder contents or the preview build if you suffer from aniexty or depression.
 *********
 
-Link to preview: 
+Link to preview: https://treesdontbarkatnight.github.io/Unnamed-Latest/
 
-Controls: W, S,Up arrow,Down arrow - Menu\Poem highlight currently select option
+          Controls: W, S,Up arrow,Down arrow - Menu\Poem highlight currently select option
 
-          Space Bar - Select highlited option\Next Dialog
+                    Space Bar - Select highlited option\Next Dialog
