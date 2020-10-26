@@ -4,6 +4,7 @@
 <style>
 body{
 	background-color: #000000;
+	background-image: url('images/bg/web_bg.png');
 	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -25,8 +26,8 @@ canvas{
   position: absolute;
   top: 20%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -ms-transform: translate(-45%, 400%);
+  transform: translate(-45%, 400%);
 }
 button {
   display: inline-block;
@@ -139,7 +140,7 @@ button:hover {background-color: #ff3399}
 
 </head>
 <body>
-<button class="ddlcbutton" type="button" id="ddlc_start" onclick="ddlc_start()">Start DDLC</button>
+<button class="ddlcbutton" type="button" id="ddlc_start" onclick="ddlc_start()">Play!</button>
 <button class="fullscreen" type="button" id="fullscreen" onclick=canvas.webkitRequestFullscreen(); style="display: none">Fullscreen</button>
 </body>
 </html>
