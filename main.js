@@ -145,6 +145,7 @@ function ddlc_start(){
 	document.getElementById("mycanvas").style.display = "inline";
 	document.getElementById("fullscreen").style.display = "inline";
 	document.getElementById("ddlc_start").style.display = "none";
+	document.getElementById("web_logo").style.display = "none";
 	document.body.setAttribute("style","background-image: url('images/bg/background.png')");
 	document.title = "Doki Doki Literature Club";
 	audio("1","play");
