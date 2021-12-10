@@ -66,76 +66,523 @@ button {
 
 button:hover {background-color: #ff3399}
 </style>
-<canvas class="center" id="mycanvas" width="500" height="400" align="left" style="display: none"></canvas>
-<img src="images/bg/splash_jscript.png" id="splash" width="500" height="400" style="display:none"></img>
-<img src="images/bg/splash_jscript_g.png" id="splashG" width="500" height="400" style="display:none"></img>
-<img src="images/bg/warning.png" id="warning" width="500" height="400" style="display:none"></img>
-<img src="images/bg/residential.png" id="residential" width="500" height="400" style="display:none"></img>
-<img src="images/bg/class.png" id="class" width="500" height="400" style="display:none"></img>
-<img src="images/bg/club.png" id="club" width="500" height="400" style="display:none"></img>
-<img src="images/bg/notebook.png" id="notebook" width="500" height="400" style="display:none"></img>
-<img src="images/bg/noise1.jpg" id="noise1" width="500" height="400" style="display:none"></img>
-<img src="images/bg/noise2.jpg" id="noise2" width="500" height="400" style="display:none"></img>
-<img src="images/bg/noise3.jpg" id="noise3" width="500" height="400" style="display:none"></img>
-<img src="images/bg/noise4.jpg" id="noise4" width="500" height="400" style="display:none"></img>
-<img src="images/cg/s_kill_bg.png" id="s_kill_bg" width="500" height="400" style="display:none"></img>
-<img src="images/cg/s_kill_bg2.png" id="s_kill_bg2" width="500" height="400" style="display:none"></img>
-<img src="images/bg/glitch.jpg" id="glitch" width="500" height="400" style="display:none"></img>
-<img src="images/bg/glitch-blue.png" id="glitch-blue" width="500" height="400" style="display:none"></img>
-<img src="images/bg/glitch-green.png" id="glitch-green" width="500" height="400" style="display:none"></img>
-<img src="images/bg/glitch-red.png" id="glitch-red" width="500" height="400" style="display:none"></img>
-<img src="gui/play_blue.png" id="play_blue" width="500" height="400" style="display:none"></img>
-<img src="gui/settings_blue.png" id="settings_blue" width="500" height="400" style="display:none"></img>
-<img src="gui/logo.png" id="logo" width="500" height="400" style="display:none"></img>
-<img src="gui/settings.png" id="settings" width="500" height="400" style="display:none"></img>
-<img src="gui/play.png" id="play" width="500" height="400" style="display:none"></img>
-<img src="gui/overlay/main_menu.png" id="main_menu" width="500" height="400" style="display:none"></img>
-<img src="gui/menu_art_y.png" id="menu_art_y" width="500" height="400" style="display:none"></img>
-<img src="gui/menu_art_s.png" id="menu_art_s" width="500" height="400" style="display:none"></img>
-<img src="gui/menu_art_s_ghost.png" id="menu_art_s_ghost" width="500" height="400" style="display:none"></img>
-<img src="gui/menu_art_s_break.png" id="menu_art_s_break" width="500" height="400" style="display:none"></img>
-<img src="gui/menu_art_n.png" id="menu_art_n" width="500" height="400" style="display:none"></img>
-<img src="gui/menu_art_m.png" id="menu_art_m" width="500" height="400" style="display:none"></img>
-<img src="gui/menu_bg.png" id="background" width="500" height="400" style="display:none"></img>
-<img src="gui/textbox.png" id="textbox" width="500" height="400" style="display:none"></img>
-<img src="gui/namebox.png" id="namebox" width="500" height="400" style="display:none"></img>
-<img src="gui/poemgame/m_sticker_1.png" id="m_sticker_1" width="500" height="400" style="display:none"></img>
-<img src="gui/poemgame/n_sticker_1.png" id="n_sticker_1" width="500" height="400" style="display:none"></img>
-<img src="gui/poemgame/y_sticker_1.png" id="y_sticker_1" width="500" height="400" style="display:none"></img>
-<img src="gui/poemgame/s_sticker_1.png" id="s_sticker_1" width="500" height="400" style="display:none"></img>
-<img src="gui/poemgame/m_sticker_2.png" id="m_sticker_2" width="500" height="400" style="display:none"></img>
-<img src="gui/poemgame/n_sticker_2.png" id="n_sticker_2" width="500" height="400" style="display:none"></img>
-<img src="gui/poemgame/y_sticker_2.png" id="y_sticker_2" width="500" height="400" style="display:none"></img>
-<img src="gui/poemgame/s_sticker_2.png" id="s_sticker_2" width="500" height="400" style="display:none"></img>
-<img src="gui/poemgame/m_sticker_3.png" id="m_sticker_3" width="500" height="400" style="display:none"></img>
-<img src="gui/poemgame/n_sticker_3.png" id="n_sticker_3" width="500" height="400" style="display:none"></img>
-<img src="gui/poemgame/y_sticker_3.png" id="y_sticker_3" width="500" height="400" style="display:none"></img>
-<img src="gui/poemgame/s_sticker_3.png" id="s_sticker_3" width="500" height="400" style="display:none"></img>
+<canvas class="center" id="mycanvas" width="1280" height="720" align="left" style="display: none"></canvas>
+<img src="images/bg/splash.png" id="splash" style="display:none"></img>
+<img src="images/bg/splash_jscript_g.png" id="splashG" style="display:none"></img>
+<img src="images/bg/warning.png" id="warning" style="display:none"></img>
+<img src="images/bg/residential.png" id="residential" style="display:none"></img>
+<img src="images/bg/class.png" id="class" style="display:none"></img>
+<img src="images/bg/club.png" id="club" style="display:none"></img>
+<img src="images/bg/notebook.png" id="notebook" style="display:none"></img>
+<img src="images/bg/noise1.jpg" id="noise1" style="display:none"></img>
+<img src="images/bg/noise2.jpg" id="noise2" style="display:none"></img>
+<img src="images/bg/noise3.jpg" id="noise3" style="display:none"></img>
+<img src="images/bg/noise4.jpg" id="noise4" style="display:none"></img>
+<img src="images/cg/s_kill_bg.png" id="s_kill_bg" style="display:none"></img>
+<img src="images/cg/s_kill_bg2.png" id="s_kill_bg2" style="display:none"></img>
+<img src="images/bg/glitch.jpg" id="glitch" style="display:none"></img>
+<img src="images/bg/glitch-blue.png" id="glitch-blue" style="display:none"></img>
+<img src="images/bg/glitch-green.png" id="glitch-green" style="display:none"></img>
+<img src="images/bg/glitch-red.png" id="glitch-red" style="display:none"></img>
+<img src="gui/play_blue.png" id="play_blue" style="display:none"></img>
+<img src="gui/settings_blue.png" id="settings_blue" style="display:none"></img>
+<img src="gui/logo.png" id="logo" style="display:none"></img>
+<img src="gui/settings.png" id="settings" style="display:none"></img>
+<img src="gui/play.png" id="play" style="display:none"></img>
+<img src="gui/overlay/main_menu.png" id="main_menu" style="display:none"></img>
+<img src="gui/menu_art_y.png" id="menu_art_y" style="display:none"></img>
+<img src="gui/menu_art_s.png" id="menu_art_s" style="display:none"></img>
+<img src="gui/menu_art_s_ghost.png" id="menu_art_s_ghost" style="display:none"></img>
+<img src="gui/menu_art_s_break.png" id="menu_art_s_break" style="display:none"></img>
+<img src="gui/menu_art_n.png" id="menu_art_n" style="display:none"></img>
+<img src="gui/menu_art_m.png" id="menu_art_m" style="display:none"></img>
+<img src="gui/menu_bg.png" id="background" style="display:none"></img>
+<img src="gui/textbox.png" id="textbox" style="display:none"></img>
+<img src="gui/namebox.png" id="namebox" style="display:none"></img>
+<img src="gui/poemgame/m_sticker_1.png" id="m_sticker_1" style="display:none"></img>
+<img src="gui/poemgame/n_sticker_1.png" id="n_sticker_1" style="display:none"></img>
+<img src="gui/poemgame/y_sticker_1.png" id="y_sticker_1" style="display:none"></img>
+<img src="gui/poemgame/s_sticker_1.png" id="s_sticker_1" style="display:none"></img>
+<img src="gui/poemgame/m_sticker_2.png" id="m_sticker_2" style="display:none"></img>
+<img src="gui/poemgame/n_sticker_2.png" id="n_sticker_2" style="display:none"></img>
+<img src="gui/poemgame/y_sticker_2.png" id="y_sticker_2" style="display:none"></img>
+<img src="gui/poemgame/s_sticker_2.png" id="s_sticker_2" style="display:none"></img>
+<img src="gui/poemgame/m_sticker_3.png" id="m_sticker_3" style="display:none"></img>
+<img src="gui/poemgame/n_sticker_3.png" id="n_sticker_3" style="display:none"></img>
+<img src="gui/poemgame/y_sticker_3.png" id="y_sticker_3" style="display:none"></img>
+<img src="gui/poemgame/s_sticker_3.png" id="s_sticker_3" style="display:none"></img>
 <!-- Sayori Textures -->
-<img src="images/sayori/1r.png" id="sayori_1r" width="500" height="400" style="display:none"></img>
-<img src="images/sayori/1l.png" id="sayori_1l" width="500" height="400" style="display:none"></img>
-<img src="images/sayori/2r.png" id="sayori_2r" width="500" height="400" style="display:none"></img>
-<img src="images/sayori/2l.png" id="sayori_2l" width="500" height="400" style="display:none"></img>
-<img src="images/sayori/a.png" id="sayori_a" width="500" height="400" style="display:none"></img>
-<img src="images/sayori/p.png" id="sayori_p" width="500" height="400" style="display:none"></img>
-<img src="images/sayori/i.png" id="sayori_i" width="500" height="400" style="display:none"></img>
-<img src="images/cg/s_kill.png" id="s_kill" width="500" height="400" style="display:none"></img>
-<img src="images/cg/s_kill2.png" id="s_kill2" width="500" height="400" style="display:none"></img>
+<img src="images/sayori/1r.png" id="sayori_1r" style="display:none"></img>
+<img src="images/sayori/1l.png" id="sayori_1l" style="display:none"></img>
+<img src="images/sayori/2r.png" id="sayori_2r" style="display:none"></img>
+<img src="images/sayori/2l.png" id="sayori_2l" style="display:none"></img>
+<img src="images/sayori/a.png" id="sayori_a" style="display:none"></img>
+<img src="images/sayori/p.png" id="sayori_p" style="display:none"></img>
+<img src="images/sayori/i.png" id="sayori_i" style="display:none"></img>
+<img src="images/cg/s_kill.png" id="s_kill" style="display:none"></img>
+<img src="images/cg/s_kill2.png" id="s_kill2" style="display:none"></img>
 <!-- Natsuki Textures -->
-<img src="images/natsuki/1r.png" id="natsuki_1r" width="500" height="400" style="display:none"></img>
-<img src="images/natsuki/1l.png" id="natsuki_1l" width="500" height="400" style="display:none"></img>
-<img src="images/natsuki/a.png" id="natsuki_a" width="500" height="400" style="display:none"></img>
-<img src="images/natsuki/i.png" id="natsuki_i" width="500" height="400" style="display:none"></img>
+<img src="images/natsuki/1r.png" id="natsuki_1r" style="display:none"></img>
+<img src="images/natsuki/1l.png" id="natsuki_1l" style="display:none"></img>
+<img src="images/natsuki/a.png" id="natsuki_a" style="display:none"></img>
+<img src="images/natsuki/i.png" id="natsuki_i" style="display:none"></img>
 <!-- Yuri Textures -->
-<img src="images/yuri/1r.png" id="yuri_1r" width="500" height="400" style="display:none"></img>
-<img src="images/yuri/1l.png" id="yuri_1l" width="500" height="400" style="display:none"></img>
-<img src="images/yuri/a.png" id="yuri_a" width="500" height="400" style="display:none"></img>
-<img src="images/yuri/i.png" id="yuri_i" width="500" height="400" style="display:none"></img>
+<img src="images/yuri/1r.png" id="yuri_1r" style="display:none"></img>
+<img src="images/yuri/1l.png" id="yuri_1l" style="display:none"></img>
+<img src="images/yuri/a.png" id="yuri_a" style="display:none"></img>
+<img src="images/yuri/i.png" id="yuri_i" style="display:none"></img>
 <!-- Monika Textures -->
-<img src="images/monika/1r.png" id="monika_1r" width="500" height="400" style="display:none"></img>
-<img src="images/monika/1l.png" id="monika_1l" width="500" height="400" style="display:none"></img>
-<img src="images/monika/a.png" id="monika_a" width="500" height="400" style="display:none"></img>
-<img src="images/monika/i.png" id="monika_i" width="500" height="400" style="display:none"></img>
+<img src="images/monika/1r.png" id="monika_1r" style="display:none"></img>
+<img src="images/monika/1l.png" id="monika_1l" style="display:none"></img>
+<img src="images/monika/a.png" id="monika_a" style="display:none"></img>
+<img src="images/monika/i.png" id="monika_i" style="display:none"></img>
+
+<img src="images/sayonara/death (1).png" id="sayonara1" style="display:none"/>
+<img src="images/sayonara/death (2).png" id="sayonara2" style="display:none"/>
+<img src="images/sayonara/death (3).png" id="sayonara3" style="display:none"/>
+<img src="images/sayonara/death (4).png" id="sayonara4" style="display:none"/>
+<img src="images/sayonara/death (5).png" id="sayonara5" style="display:none"/>
+<img src="images/sayonara/death (6).png" id="sayonara6" style="display:none"/>
+<img src="images/sayonara/death (7).png" id="sayonara7" style="display:none"/>
+<img src="images/sayonara/death (8).png" id="sayonara8" style="display:none"/>
+<img src="images/sayonara/death (9).png" id="sayonara9" style="display:none"/>
+<img src="images/sayonara/death (10).png" id="sayonara10" style="display:none"/>
+<img src="images/sayonara/death (11).png" id="sayonara11" style="display:none"/>
+<img src="images/sayonara/death (12).png" id="sayonara12" style="display:none"/>
+<img src="images/sayonara/death (13).png" id="sayonara13" style="display:none"/>
+<img src="images/sayonara/death (14).png" id="sayonara14" style="display:none"/>
+<img src="images/sayonara/death (15).png" id="sayonara15" style="display:none"/>
+<img src="images/sayonara/death (16).png" id="sayonara16" style="display:none"/>
+<img src="images/sayonara/death (17).png" id="sayonara17" style="display:none"/>
+<img src="images/sayonara/death (18).png" id="sayonara18" style="display:none"/>
+<img src="images/sayonara/death (19).png" id="sayonara19" style="display:none"/>
+<img src="images/sayonara/death (20).png" id="sayonara20" style="display:none"/>
+<img src="images/sayonara/death (21).png" id="sayonara21" style="display:none"/>
+<img src="images/sayonara/death (22).png" id="sayonara22" style="display:none"/>
+<img src="images/sayonara/death (23).png" id="sayonara23" style="display:none"/>
+<img src="images/sayonara/death (24).png" id="sayonara24" style="display:none"/>
+<img src="images/sayonara/death (25).png" id="sayonara25" style="display:none"/>
+<img src="images/sayonara/death (26).png" id="sayonara26" style="display:none"/>
+<img src="images/sayonara/death (27).png" id="sayonara27" style="display:none"/>
+<img src="images/sayonara/death (28).png" id="sayonara28" style="display:none"/>
+<img src="images/sayonara/death (29).png" id="sayonara29" style="display:none"/>
+<img src="images/sayonara/death (30).png" id="sayonara30" style="display:none"/>
+<img src="images/sayonara/death (31).png" id="sayonara31" style="display:none"/>
+<img src="images/sayonara/death (32).png" id="sayonara32" style="display:none"/>
+<img src="images/sayonara/death (33).png" id="sayonara33" style="display:none"/>
+<img src="images/sayonara/death (34).png" id="sayonara34" style="display:none"/>
+<img src="images/sayonara/death (35).png" id="sayonara35" style="display:none"/>
+<img src="images/sayonara/death (36).png" id="sayonara36" style="display:none"/>
+<img src="images/sayonara/death (37).png" id="sayonara37" style="display:none"/>
+<img src="images/sayonara/death (38).png" id="sayonara38" style="display:none"/>
+<img src="images/sayonara/death (39).png" id="sayonara39" style="display:none"/>
+<img src="images/sayonara/death (40).png" id="sayonara40" style="display:none"/>
+<img src="images/sayonara/death (41).png" id="sayonara41" style="display:none"/>
+<img src="images/sayonara/death (42).png" id="sayonara42" style="display:none"/>
+<img src="images/sayonara/death (43).png" id="sayonara43" style="display:none"/>
+<img src="images/sayonara/death (44).png" id="sayonara44" style="display:none"/>
+<img src="images/sayonara/death (45).png" id="sayonara45" style="display:none"/>
+<img src="images/sayonara/death (46).png" id="sayonara46" style="display:none"/>
+<img src="images/sayonara/death (47).png" id="sayonara47" style="display:none"/>
+<img src="images/sayonara/death (48).png" id="sayonara48" style="display:none"/>
+<img src="images/sayonara/death (49).png" id="sayonara49" style="display:none"/>
+<img src="images/sayonara/death (50).png" id="sayonara50" style="display:none"/>
+<img src="images/sayonara/death (51).png" id="sayonara51" style="display:none"/>
+<img src="images/sayonara/death (52).png" id="sayonara52" style="display:none"/>
+<img src="images/sayonara/death (53).png" id="sayonara53" style="display:none"/>
+<img src="images/sayonara/death (54).png" id="sayonara54" style="display:none"/>
+<img src="images/sayonara/death (55).png" id="sayonara55" style="display:none"/>
+<img src="images/sayonara/death (56).png" id="sayonara56" style="display:none"/>
+<img src="images/sayonara/death (57).png" id="sayonara57" style="display:none"/>
+<img src="images/sayonara/death (58).png" id="sayonara58" style="display:none"/>
+<img src="images/sayonara/death (59).png" id="sayonara59" style="display:none"/>
+<img src="images/sayonara/death (60).png" id="sayonara60" style="display:none"/>
+<img src="images/sayonara/death (61).png" id="sayonara61" style="display:none"/>
+<img src="images/sayonara/death (62).png" id="sayonara62" style="display:none"/>
+<img src="images/sayonara/death (63).png" id="sayonara63" style="display:none"/>
+<img src="images/sayonara/death (64).png" id="sayonara64" style="display:none"/>
+<img src="images/sayonara/death (65).png" id="sayonara65" style="display:none"/>
+<img src="images/sayonara/death (66).png" id="sayonara66" style="display:none"/>
+<img src="images/sayonara/death (67).png" id="sayonara67" style="display:none"/>
+<img src="images/sayonara/death (68).png" id="sayonara68" style="display:none"/>
+<img src="images/sayonara/death (69).png" id="sayonara69" style="display:none"/>
+<img src="images/sayonara/death (70).png" id="sayonara70" style="display:none"/>
+<img src="images/sayonara/death (71).png" id="sayonara71" style="display:none"/>
+<img src="images/sayonara/death (72).png" id="sayonara72" style="display:none"/>
+<img src="images/sayonara/death (73).png" id="sayonara73" style="display:none"/>
+<img src="images/sayonara/death (74).png" id="sayonara74" style="display:none"/>
+<img src="images/sayonara/death (75).png" id="sayonara75" style="display:none"/>
+<img src="images/sayonara/death (76).png" id="sayonara76" style="display:none"/>
+<img src="images/sayonara/death (77).png" id="sayonara77" style="display:none"/>
+<img src="images/sayonara/death (78).png" id="sayonara78" style="display:none"/>
+<img src="images/sayonara/death (79).png" id="sayonara79" style="display:none"/>
+<img src="images/sayonara/death (80).png" id="sayonara80" style="display:none"/>
+<img src="images/sayonara/death (81).png" id="sayonara81" style="display:none"/>
+<img src="images/sayonara/death (82).png" id="sayonara82" style="display:none"/>
+<img src="images/sayonara/death (83).png" id="sayonara83" style="display:none"/>
+<img src="images/sayonara/death (84).png" id="sayonara84" style="display:none"/>
+<img src="images/sayonara/death (85).png" id="sayonara85" style="display:none"/>
+<img src="images/sayonara/death (86).png" id="sayonara86" style="display:none"/>
+<img src="images/sayonara/death (87).png" id="sayonara87" style="display:none"/>
+<img src="images/sayonara/death (88).png" id="sayonara88" style="display:none"/>
+<img src="images/sayonara/death (89).png" id="sayonara89" style="display:none"/>
+<img src="images/sayonara/death (90).png" id="sayonara90" style="display:none"/>
+<img src="images/sayonara/death (91).png" id="sayonara91" style="display:none"/>
+<img src="images/sayonara/death (92).png" id="sayonara92" style="display:none"/>
+<img src="images/sayonara/death (93).png" id="sayonara93" style="display:none"/>
+<img src="images/sayonara/death (94).png" id="sayonara94" style="display:none"/>
+<img src="images/sayonara/death (95).png" id="sayonara95" style="display:none"/>
+<img src="images/sayonara/death (96).png" id="sayonara96" style="display:none"/>
+<img src="images/sayonara/death (97).png" id="sayonara97" style="display:none"/>
+<img src="images/sayonara/death (98).png" id="sayonara98" style="display:none"/>
+<img src="images/sayonara/death (99).png" id="sayonara99" style="display:none"/>
+<img src="images/sayonara/death (100).png" id="sayonara100" style="display:none"/>
+<img src="images/sayonara/death (101).png" id="sayonara101" style="display:none"/>
+<img src="images/sayonara/death (102).png" id="sayonara102" style="display:none"/>
+<img src="images/sayonara/death (103).png" id="sayonara103" style="display:none"/>
+<img src="images/sayonara/death (104).png" id="sayonara104" style="display:none"/>
+<img src="images/sayonara/death (105).png" id="sayonara105" style="display:none"/>
+<img src="images/sayonara/death (106).png" id="sayonara106" style="display:none"/>
+<img src="images/sayonara/death (107).png" id="sayonara107" style="display:none"/>
+<img src="images/sayonara/death (108).png" id="sayonara108" style="display:none"/>
+<img src="images/sayonara/death (109).png" id="sayonara109" style="display:none"/>
+<img src="images/sayonara/death (110).png" id="sayonara110" style="display:none"/>
+<img src="images/sayonara/death (111).png" id="sayonara111" style="display:none"/>
+<img src="images/sayonara/death (112).png" id="sayonara112" style="display:none"/>
+<img src="images/sayonara/death (113).png" id="sayonara113" style="display:none"/>
+<img src="images/sayonara/death (114).png" id="sayonara114" style="display:none"/>
+<img src="images/sayonara/death (115).png" id="sayonara115" style="display:none"/>
+<img src="images/sayonara/death (116).png" id="sayonara116" style="display:none"/>
+<img src="images/sayonara/death (117).png" id="sayonara117" style="display:none"/>
+<img src="images/sayonara/death (118).png" id="sayonara118" style="display:none"/>
+<img src="images/sayonara/death (119).png" id="sayonara119" style="display:none"/>
+<img src="images/sayonara/death (120).png" id="sayonara120" style="display:none"/>
+<img src="images/sayonara/death (121).png" id="sayonara121" style="display:none"/>
+<img src="images/sayonara/death (122).png" id="sayonara122" style="display:none"/>
+<img src="images/sayonara/death (123).png" id="sayonara123" style="display:none"/>
+<img src="images/sayonara/death (124).png" id="sayonara124" style="display:none"/>
+<img src="images/sayonara/death (125).png" id="sayonara125" style="display:none"/>
+<img src="images/sayonara/death (126).png" id="sayonara126" style="display:none"/>
+<img src="images/sayonara/death (127).png" id="sayonara127" style="display:none"/>
+<img src="images/sayonara/death (128).png" id="sayonara128" style="display:none"/>
+<img src="images/sayonara/death (129).png" id="sayonara129" style="display:none"/>
+<img src="images/sayonara/death (130).png" id="sayonara130" style="display:none"/>
+<img src="images/sayonara/death (131).png" id="sayonara131" style="display:none"/>
+<img src="images/sayonara/death (132).png" id="sayonara132" style="display:none"/>
+<img src="images/sayonara/death (133).png" id="sayonara133" style="display:none"/>
+<img src="images/sayonara/death (134).png" id="sayonara134" style="display:none"/>
+<img src="images/sayonara/death (135).png" id="sayonara135" style="display:none"/>
+<img src="images/sayonara/death (136).png" id="sayonara136" style="display:none"/>
+<img src="images/sayonara/death (137).png" id="sayonara137" style="display:none"/>
+<img src="images/sayonara/death (138).png" id="sayonara138" style="display:none"/>
+<img src="images/sayonara/death (139).png" id="sayonara139" style="display:none"/>
+<img src="images/sayonara/death (140).png" id="sayonara140" style="display:none"/>
+<img src="images/sayonara/death (141).png" id="sayonara141" style="display:none"/>
+<img src="images/sayonara/death (142).png" id="sayonara142" style="display:none"/>
+<img src="images/sayonara/death (143).png" id="sayonara143" style="display:none"/>
+<img src="images/sayonara/death (144).png" id="sayonara144" style="display:none"/>
+<img src="images/sayonara/death (145).png" id="sayonara145" style="display:none"/>
+<img src="images/sayonara/death (146).png" id="sayonara146" style="display:none"/>
+<img src="images/sayonara/death (147).png" id="sayonara147" style="display:none"/>
+<img src="images/sayonara/death (148).png" id="sayonara148" style="display:none"/>
+<img src="images/sayonara/death (149).png" id="sayonara149" style="display:none"/>
+<img src="images/sayonara/death (150).png" id="sayonara150" style="display:none"/>
+<img src="images/sayonara/death (151).png" id="sayonara151" style="display:none"/>
+<img src="images/sayonara/death (152).png" id="sayonara152" style="display:none"/>
+<img src="images/sayonara/death (153).png" id="sayonara153" style="display:none"/>
+<img src="images/sayonara/death (154).png" id="sayonara154" style="display:none"/>
+<img src="images/sayonara/death (155).png" id="sayonara155" style="display:none"/>
+<img src="images/sayonara/death (156).png" id="sayonara156" style="display:none"/>
+<img src="images/sayonara/death (157).png" id="sayonara157" style="display:none"/>
+<img src="images/sayonara/death (158).png" id="sayonara158" style="display:none"/>
+<img src="images/sayonara/death (159).png" id="sayonara159" style="display:none"/>
+<img src="images/sayonara/death (160).png" id="sayonara160" style="display:none"/>
+<img src="images/sayonara/death (161).png" id="sayonara161" style="display:none"/>
+<img src="images/sayonara/death (162).png" id="sayonara162" style="display:none"/>
+<img src="images/sayonara/death (163).png" id="sayonara163" style="display:none"/>
+<img src="images/sayonara/death (164).png" id="sayonara164" style="display:none"/>
+<img src="images/sayonara/death (165).png" id="sayonara165" style="display:none"/>
+<img src="images/sayonara/death (166).png" id="sayonara166" style="display:none"/>
+<img src="images/sayonara/death (167).png" id="sayonara167" style="display:none"/>
+<img src="images/sayonara/death (168).png" id="sayonara168" style="display:none"/>
+<img src="images/sayonara/death (169).png" id="sayonara169" style="display:none"/>
+<img src="images/sayonara/death (170).png" id="sayonara170" style="display:none"/>
+<img src="images/sayonara/death (171).png" id="sayonara171" style="display:none"/>
+<img src="images/sayonara/death (172).png" id="sayonara172" style="display:none"/>
+<img src="images/sayonara/death (173).png" id="sayonara173" style="display:none"/>
+<img src="images/sayonara/death (174).png" id="sayonara174" style="display:none"/>
+<img src="images/sayonara/death (175).png" id="sayonara175" style="display:none"/>
+<img src="images/sayonara/death (176).png" id="sayonara176" style="display:none"/>
+<img src="images/sayonara/death (177).png" id="sayonara177" style="display:none"/>
+<img src="images/sayonara/death (178).png" id="sayonara178" style="display:none"/>
+<img src="images/sayonara/death (179).png" id="sayonara179" style="display:none"/>
+<img src="images/sayonara/death (180).png" id="sayonara180" style="display:none"/>
+<img src="images/sayonara/death (181).png" id="sayonara181" style="display:none"/>
+<img src="images/sayonara/death (182).png" id="sayonara182" style="display:none"/>
+<img src="images/sayonara/death (183).png" id="sayonara183" style="display:none"/>
+<img src="images/sayonara/death (184).png" id="sayonara184" style="display:none"/>
+<img src="images/sayonara/death (185).png" id="sayonara185" style="display:none"/>
+<img src="images/sayonara/death (186).png" id="sayonara186" style="display:none"/>
+<img src="images/sayonara/death (187).png" id="sayonara187" style="display:none"/>
+<img src="images/sayonara/death (188).png" id="sayonara188" style="display:none"/>
+<img src="images/sayonara/death (189).png" id="sayonara189" style="display:none"/>
+<img src="images/sayonara/death (190).png" id="sayonara190" style="display:none"/>
+<img src="images/sayonara/death (191).png" id="sayonara191" style="display:none"/>
+<img src="images/sayonara/death (192).png" id="sayonara192" style="display:none"/>
+<img src="images/sayonara/death (193).png" id="sayonara193" style="display:none"/>
+<img src="images/sayonara/death (194).png" id="sayonara194" style="display:none"/>
+<img src="images/sayonara/death (195).png" id="sayonara195" style="display:none"/>
+<img src="images/sayonara/death (196).png" id="sayonara196" style="display:none"/>
+<img src="images/sayonara/death (197).png" id="sayonara197" style="display:none"/>
+<img src="images/sayonara/death (198).png" id="sayonara198" style="display:none"/>
+<img src="images/sayonara/death (199).png" id="sayonara199" style="display:none"/>
+<img src="images/sayonara/death (200).png" id="sayonara200" style="display:none"/>
+<img src="images/sayonara/death (201).png" id="sayonara201" style="display:none"/>
+<img src="images/sayonara/death (202).png" id="sayonara202" style="display:none"/>
+<img src="images/sayonara/death (203).png" id="sayonara203" style="display:none"/>
+<img src="images/sayonara/death (204).png" id="sayonara204" style="display:none"/>
+<img src="images/sayonara/death (205).png" id="sayonara205" style="display:none"/>
+<img src="images/sayonara/death (206).png" id="sayonara206" style="display:none"/>
+<img src="images/sayonara/death (207).png" id="sayonara207" style="display:none"/>
+<img src="images/sayonara/death (208).png" id="sayonara208" style="display:none"/>
+<img src="images/sayonara/death (209).png" id="sayonara209" style="display:none"/>
+<img src="images/sayonara/death (210).png" id="sayonara210" style="display:none"/>
+<img src="images/sayonara/death (211).png" id="sayonara211" style="display:none"/>
+<img src="images/sayonara/death (212).png" id="sayonara212" style="display:none"/>
+<img src="images/sayonara/death (213).png" id="sayonara213" style="display:none"/>
+<img src="images/sayonara/death (214).png" id="sayonara214" style="display:none"/>
+<img src="images/sayonara/death (215).png" id="sayonara215" style="display:none"/>
+<img src="images/sayonara/death (216).png" id="sayonara216" style="display:none"/>
+<img src="images/sayonara/death (217).png" id="sayonara217" style="display:none"/>
+<img src="images/sayonara/death (218).png" id="sayonara218" style="display:none"/>
+<img src="images/sayonara/death (219).png" id="sayonara219" style="display:none"/>
+<img src="images/sayonara/death (220).png" id="sayonara220" style="display:none"/>
+<img src="images/sayonara/death (221).png" id="sayonara221" style="display:none"/>
+<img src="images/sayonara/death (222).png" id="sayonara222" style="display:none"/>
+<img src="images/sayonara/death (223).png" id="sayonara223" style="display:none"/>
+<img src="images/sayonara/death (224).png" id="sayonara224" style="display:none"/>
+<img src="images/sayonara/death (225).png" id="sayonara225" style="display:none"/>
+<img src="images/sayonara/death (226).png" id="sayonara226" style="display:none"/>
+<img src="images/sayonara/death (227).png" id="sayonara227" style="display:none"/>
+<img src="images/sayonara/death (228).png" id="sayonara228" style="display:none"/>
+<img src="images/sayonara/death (229).png" id="sayonara229" style="display:none"/>
+<img src="images/sayonara/death (230).png" id="sayonara230" style="display:none"/>
+<img src="images/sayonara/death (231).png" id="sayonara231" style="display:none"/>
+<img src="images/sayonara/death (232).png" id="sayonara232" style="display:none"/>
+<img src="images/sayonara/death (233).png" id="sayonara233" style="display:none"/>
+<img src="images/sayonara/death (234).png" id="sayonara234" style="display:none"/>
+<img src="images/sayonara/death (235).png" id="sayonara235" style="display:none"/>
+<img src="images/sayonara/death (236).png" id="sayonara236" style="display:none"/>
+<img src="images/sayonara/death (237).png" id="sayonara237" style="display:none"/>
+<img src="images/sayonara/death (238).png" id="sayonara238" style="display:none"/>
+<img src="images/sayonara/death (239).png" id="sayonara239" style="display:none"/>
+<img src="images/sayonara/death (240).png" id="sayonara240" style="display:none"/>
+<img src="images/sayonara/death (241).png" id="sayonara241" style="display:none"/>
+<img src="images/sayonara/death (242).png" id="sayonara242" style="display:none"/>
+<img src="images/sayonara/death (243).png" id="sayonara243" style="display:none"/>
+<img src="images/sayonara/death (244).png" id="sayonara244" style="display:none"/>
+<img src="images/sayonara/death (245).png" id="sayonara245" style="display:none"/>
+<img src="images/sayonara/death (246).png" id="sayonara246" style="display:none"/>
+<img src="images/sayonara/death (247).png" id="sayonara247" style="display:none"/>
+<img src="images/sayonara/death (248).png" id="sayonara248" style="display:none"/>
+<img src="images/sayonara/death (249).png" id="sayonara249" style="display:none"/>
+<img src="images/sayonara/death (250).png" id="sayonara250" style="display:none"/>
+<img src="images/sayonara/death (251).png" id="sayonara251" style="display:none"/>
+<img src="images/sayonara/death (252).png" id="sayonara252" style="display:none"/>
+<img src="images/sayonara/death (253).png" id="sayonara253" style="display:none"/>
+<img src="images/sayonara/death (254).png" id="sayonara254" style="display:none"/>
+<img src="images/sayonara/death (255).png" id="sayonara255" style="display:none"/>
+<img src="images/sayonara/death (256).png" id="sayonara256" style="display:none"/>
+<img src="images/sayonara/death (257).png" id="sayonara257" style="display:none"/>
+<img src="images/sayonara/death (258).png" id="sayonara258" style="display:none"/>
+<img src="images/sayonara/death (259).png" id="sayonara259" style="display:none"/>
+<img src="images/sayonara/death (260).png" id="sayonara260" style="display:none"/>
+<img src="images/sayonara/death (261).png" id="sayonara261" style="display:none"/>
+<img src="images/sayonara/death (262).png" id="sayonara262" style="display:none"/>
+<img src="images/sayonara/death (263).png" id="sayonara263" style="display:none"/>
+<img src="images/sayonara/death (264).png" id="sayonara264" style="display:none"/>
+<img src="images/sayonara/death (265).png" id="sayonara265" style="display:none"/>
+<img src="images/sayonara/death (266).png" id="sayonara266" style="display:none"/>
+<img src="images/sayonara/death (267).png" id="sayonara267" style="display:none"/>
+<img src="images/sayonara/death (268).png" id="sayonara268" style="display:none"/>
+<img src="images/sayonara/death (269).png" id="sayonara269" style="display:none"/>
+<img src="images/sayonara/death (270).png" id="sayonara270" style="display:none"/>
+<img src="images/sayonara/death (271).png" id="sayonara271" style="display:none"/>
+<img src="images/sayonara/death (272).png" id="sayonara272" style="display:none"/>
+<img src="images/sayonara/death (273).png" id="sayonara273" style="display:none"/>
+<img src="images/sayonara/death (274).png" id="sayonara274" style="display:none"/>
+<img src="images/sayonara/death (275).png" id="sayonara275" style="display:none"/>
+<img src="images/sayonara/death (276).png" id="sayonara276" style="display:none"/>
+<img src="images/sayonara/death (277).png" id="sayonara277" style="display:none"/>
+<img src="images/sayonara/death (278).png" id="sayonara278" style="display:none"/>
+<img src="images/sayonara/death (279).png" id="sayonara279" style="display:none"/>
+<img src="images/sayonara/death (280).png" id="sayonara280" style="display:none"/>
+<img src="images/sayonara/death (281).png" id="sayonara281" style="display:none"/>
+<img src="images/sayonara/death (282).png" id="sayonara282" style="display:none"/>
+<img src="images/sayonara/death (283).png" id="sayonara283" style="display:none"/>
+<img src="images/sayonara/death (284).png" id="sayonara284" style="display:none"/>
+<img src="images/sayonara/death (285).png" id="sayonara285" style="display:none"/>
+<img src="images/sayonara/death (286).png" id="sayonara286" style="display:none"/>
+<img src="images/sayonara/death (287).png" id="sayonara287" style="display:none"/>
+<img src="images/sayonara/death (288).png" id="sayonara288" style="display:none"/>
+<img src="images/sayonara/death (289).png" id="sayonara289" style="display:none"/>
+<img src="images/sayonara/death (290).png" id="sayonara290" style="display:none"/>
+<img src="images/sayonara/death (291).png" id="sayonara291" style="display:none"/>
+<img src="images/sayonara/death (292).png" id="sayonara292" style="display:none"/>
+<img src="images/sayonara/death (293).png" id="sayonara293" style="display:none"/>
+<img src="images/sayonara/death (294).png" id="sayonara294" style="display:none"/>
+<img src="images/sayonara/death (295).png" id="sayonara295" style="display:none"/>
+<img src="images/sayonara/death (296).png" id="sayonara296" style="display:none"/>
+<img src="images/sayonara/death (297).png" id="sayonara297" style="display:none"/>
+<img src="images/sayonara/death (298).png" id="sayonara298" style="display:none"/>
+<img src="images/sayonara/death (299).png" id="sayonara299" style="display:none"/>
+<img src="images/sayonara/death (300).png" id="sayonara300" style="display:none"/>
+<img src="images/sayonara/death (301).png" id="sayonara301" style="display:none"/>
+<img src="images/sayonara/death (302).png" id="sayonara302" style="display:none"/>
+<img src="images/sayonara/death (303).png" id="sayonara303" style="display:none"/>
+<img src="images/sayonara/death (304).png" id="sayonara304" style="display:none"/>
+<img src="images/sayonara/death (305).png" id="sayonara305" style="display:none"/>
+<img src="images/sayonara/death (306).png" id="sayonara306" style="display:none"/>
+<img src="images/sayonara/death (307).png" id="sayonara307" style="display:none"/>
+<img src="images/sayonara/death (308).png" id="sayonara308" style="display:none"/>
+<img src="images/sayonara/death (309).png" id="sayonara309" style="display:none"/>
+<img src="images/sayonara/death (310).png" id="sayonara310" style="display:none"/>
+<img src="images/sayonara/death (311).png" id="sayonara311" style="display:none"/>
+<img src="images/sayonara/death (312).png" id="sayonara312" style="display:none"/>
+<img src="images/sayonara/death (313).png" id="sayonara313" style="display:none"/>
+<img src="images/sayonara/death (314).png" id="sayonara314" style="display:none"/>
+<img src="images/sayonara/death (315).png" id="sayonara315" style="display:none"/>
+<img src="images/sayonara/death (316).png" id="sayonara316" style="display:none"/>
+<img src="images/sayonara/death (317).png" id="sayonara317" style="display:none"/>
+<img src="images/sayonara/death (318).png" id="sayonara318" style="display:none"/>
+<img src="images/sayonara/death (319).png" id="sayonara319" style="display:none"/>
+<img src="images/sayonara/death (320).png" id="sayonara320" style="display:none"/>
+<img src="images/sayonara/death (321).png" id="sayonara321" style="display:none"/>
+<img src="images/sayonara/death (322).png" id="sayonara322" style="display:none"/>
+<img src="images/sayonara/death (323).png" id="sayonara323" style="display:none"/>
+<img src="images/sayonara/death (324).png" id="sayonara324" style="display:none"/>
+<img src="images/sayonara/death (325).png" id="sayonara325" style="display:none"/>
+<img src="images/sayonara/death (326).png" id="sayonara326" style="display:none"/>
+<img src="images/sayonara/death (327).png" id="sayonara327" style="display:none"/>
+<img src="images/sayonara/death (328).png" id="sayonara328" style="display:none"/>
+<img src="images/sayonara/death (329).png" id="sayonara329" style="display:none"/>
+<img src="images/sayonara/death (330).png" id="sayonara330" style="display:none"/>
+<img src="images/sayonara/death (331).png" id="sayonara331" style="display:none"/>
+<img src="images/sayonara/death (332).png" id="sayonara332" style="display:none"/>
+<img src="images/sayonara/death (333).png" id="sayonara333" style="display:none"/>
+<img src="images/sayonara/death (334).png" id="sayonara334" style="display:none"/>
+<img src="images/sayonara/death (335).png" id="sayonara335" style="display:none"/>
+<img src="images/sayonara/death (336).png" id="sayonara336" style="display:none"/>
+<img src="images/sayonara/death (337).png" id="sayonara337" style="display:none"/>
+<img src="images/sayonara/death (338).png" id="sayonara338" style="display:none"/>
+<img src="images/sayonara/death (339).png" id="sayonara339" style="display:none"/>
+<img src="images/sayonara/death (340).png" id="sayonara340" style="display:none"/>
+<img src="images/sayonara/death (341).png" id="sayonara341" style="display:none"/>
+<img src="images/sayonara/death (342).png" id="sayonara342" style="display:none"/>
+<img src="images/sayonara/death (343).png" id="sayonara343" style="display:none"/>
+<img src="images/sayonara/death (344).png" id="sayonara344" style="display:none"/>
+<img src="images/sayonara/death (345).png" id="sayonara345" style="display:none"/>
+<img src="images/sayonara/death (346).png" id="sayonara346" style="display:none"/>
+<img src="images/sayonara/death (347).png" id="sayonara347" style="display:none"/>
+<img src="images/sayonara/death (348).png" id="sayonara348" style="display:none"/>
+<img src="images/sayonara/death (349).png" id="sayonara349" style="display:none"/>
+<img src="images/sayonara/death (350).png" id="sayonara350" style="display:none"/>
+<img src="images/sayonara/death (351).png" id="sayonara351" style="display:none"/>
+<img src="images/sayonara/death (352).png" id="sayonara352" style="display:none"/>
+<img src="images/sayonara/death (353).png" id="sayonara353" style="display:none"/>
+<img src="images/sayonara/death (354).png" id="sayonara354" style="display:none"/>
+<img src="images/sayonara/death (355).png" id="sayonara355" style="display:none"/>
+<img src="images/sayonara/death (356).png" id="sayonara356" style="display:none"/>
+<img src="images/sayonara/death (357).png" id="sayonara357" style="display:none"/>
+<img src="images/sayonara/death (358).png" id="sayonara358" style="display:none"/>
+<img src="images/sayonara/death (359).png" id="sayonara359" style="display:none"/>
+<img src="images/sayonara/death (360).png" id="sayonara360" style="display:none"/>
+<img src="images/sayonara/death (361).png" id="sayonara361" style="display:none"/>
+<img src="images/sayonara/death (362).png" id="sayonara362" style="display:none"/>
+<img src="images/sayonara/death (363).png" id="sayonara363" style="display:none"/>
+<img src="images/sayonara/death (364).png" id="sayonara364" style="display:none"/>
+<img src="images/sayonara/death (365).png" id="sayonara365" style="display:none"/>
+<img src="images/sayonara/death (366).png" id="sayonara366" style="display:none"/>
+<img src="images/sayonara/death (367).png" id="sayonara367" style="display:none"/>
+<img src="images/sayonara/death (368).png" id="sayonara368" style="display:none"/>
+<img src="images/sayonara/death (369).png" id="sayonara369" style="display:none"/>
+<img src="images/sayonara/death (370).png" id="sayonara370" style="display:none"/>
+<img src="images/sayonara/death (371).png" id="sayonara371" style="display:none"/>
+<img src="images/sayonara/death (372).png" id="sayonara372" style="display:none"/>
+<img src="images/sayonara/death (373).png" id="sayonara373" style="display:none"/>
+<img src="images/sayonara/death (374).png" id="sayonara374" style="display:none"/>
+<img src="images/sayonara/death (375).png" id="sayonara375" style="display:none"/>
+<img src="images/sayonara/death (376).png" id="sayonara376" style="display:none"/>
+<img src="images/sayonara/death (377).png" id="sayonara377" style="display:none"/>
+<img src="images/sayonara/death (378).png" id="sayonara378" style="display:none"/>
+<img src="images/sayonara/death (379).png" id="sayonara379" style="display:none"/>
+<img src="images/sayonara/death (380).png" id="sayonara380" style="display:none"/>
+<img src="images/sayonara/death (381).png" id="sayonara381" style="display:none"/>
+<img src="images/sayonara/death (382).png" id="sayonara382" style="display:none"/>
+<img src="images/sayonara/death (383).png" id="sayonara383" style="display:none"/>
+<img src="images/sayonara/death (384).png" id="sayonara384" style="display:none"/>
+<img src="images/sayonara/death (385).png" id="sayonara385" style="display:none"/>
+<img src="images/sayonara/death (386).png" id="sayonara386" style="display:none"/>
+<img src="images/sayonara/death (387).png" id="sayonara387" style="display:none"/>
+<img src="images/sayonara/death (388).png" id="sayonara388" style="display:none"/>
+<img src="images/sayonara/death (389).png" id="sayonara389" style="display:none"/>
+<img src="images/sayonara/death (390).png" id="sayonara390" style="display:none"/>
+<img src="images/sayonara/death (391).png" id="sayonara391" style="display:none"/>
+<img src="images/sayonara/death (392).png" id="sayonara392" style="display:none"/>
+<img src="images/sayonara/death (393).png" id="sayonara393" style="display:none"/>
+<img src="images/sayonara/death (394).png" id="sayonara394" style="display:none"/>
+<img src="images/sayonara/death (395).png" id="sayonara395" style="display:none"/>
+<img src="images/sayonara/death (396).png" id="sayonara396" style="display:none"/>
+<img src="images/sayonara/death (397).png" id="sayonara397" style="display:none"/>
+<img src="images/sayonara/death (398).png" id="sayonara398" style="display:none"/>
+<img src="images/sayonara/death (399).png" id="sayonara399" style="display:none"/>
+<img src="images/sayonara/death (400).png" id="sayonara400" style="display:none"/>
+<img src="images/sayonara/death (401).png" id="sayonara401" style="display:none"/>
+<img src="images/sayonara/death (402).png" id="sayonara402" style="display:none"/>
+<img src="images/sayonara/death (403).png" id="sayonara403" style="display:none"/>
+<img src="images/sayonara/death (404).png" id="sayonara404" style="display:none"/>
+<img src="images/sayonara/death (405).png" id="sayonara405" style="display:none"/>
+<img src="images/sayonara/death (406).png" id="sayonara406" style="display:none"/>
+<img src="images/sayonara/death (407).png" id="sayonara407" style="display:none"/>
+<img src="images/sayonara/death (408).png" id="sayonara408" style="display:none"/>
+<img src="images/sayonara/death (409).png" id="sayonara409" style="display:none"/>
+<img src="images/sayonara/death (410).png" id="sayonara410" style="display:none"/>
+<img src="images/sayonara/death (411).png" id="sayonara411" style="display:none"/>
+<img src="images/sayonara/death (412).png" id="sayonara412" style="display:none"/>
+<img src="images/sayonara/death (413).png" id="sayonara413" style="display:none"/>
+<img src="images/sayonara/death (414).png" id="sayonara414" style="display:none"/>
+<img src="images/sayonara/death (415).png" id="sayonara415" style="display:none"/>
+<img src="images/sayonara/death (416).png" id="sayonara416" style="display:none"/>
+<img src="images/sayonara/death (417).png" id="sayonara417" style="display:none"/>
+<img src="images/sayonara/death (418).png" id="sayonara418" style="display:none"/>
+<img src="images/sayonara/death (419).png" id="sayonara419" style="display:none"/>
+<img src="images/sayonara/death (420).png" id="sayonara420" style="display:none"/>
+<img src="images/sayonara/death (421).png" id="sayonara421" style="display:none"/>
+<img src="images/sayonara/death (422).png" id="sayonara422" style="display:none"/>
+<img src="images/sayonara/death (423).png" id="sayonara423" style="display:none"/>
+<img src="images/sayonara/death (424).png" id="sayonara424" style="display:none"/>
+<img src="images/sayonara/death (425).png" id="sayonara425" style="display:none"/>
+<img src="images/sayonara/death (426).png" id="sayonara426" style="display:none"/>
+<img src="images/sayonara/death (427).png" id="sayonara427" style="display:none"/>
+<img src="images/sayonara/death (428).png" id="sayonara428" style="display:none"/>
+<img src="images/sayonara/death (429).png" id="sayonara429" style="display:none"/>
+<img src="images/sayonara/death (430).png" id="sayonara430" style="display:none"/>
+<img src="images/sayonara/death (431).png" id="sayonara431" style="display:none"/>
+<img src="images/sayonara/death (432).png" id="sayonara432" style="display:none"/>
+<img src="images/sayonara/death (433).png" id="sayonara433" style="display:none"/>
+<img src="images/sayonara/death (434).png" id="sayonara434" style="display:none"/>
+<img src="images/sayonara/death (435).png" id="sayonara435" style="display:none"/>
+<img src="images/sayonara/death (436).png" id="sayonara436" style="display:none"/>
+<img src="images/sayonara/death (437).png" id="sayonara437" style="display:none"/>
+<img src="images/sayonara/death (438).png" id="sayonara438" style="display:none"/>
+<img src="images/sayonara/death (439).png" id="sayonara439" style="display:none"/>
+<img src="images/sayonara/death (440).png" id="sayonara440" style="display:none"/>
+<img src="images/sayonara/death (441).png" id="sayonara441" style="display:none"/>
+<img src="images/sayonara/death (442).png" id="sayonara442" style="display:none"/>
+<img src="images/sayonara/death (443).png" id="sayonara443" style="display:none"/>
+<img src="images/sayonara/death (444).png" id="sayonara444" style="display:none"/>
+<img src="images/sayonara/death (445).png" id="sayonara445" style="display:none"/>
+
 <audio id="1" muted loop src="bgm/1.ogg" style="visibility: hidden"></audio>
 <audio id="2" muted loop src="bgm/2.ogg" style="visibility: hidden"></audio>
 <audio id="3" muted loop src="bgm/3.ogg" style="visibility: hidden"></audio>

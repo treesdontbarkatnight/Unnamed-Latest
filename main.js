@@ -1,6 +1,6 @@
 var bg_x = 0;
 var bg_y = 0;
-var bg2_x = 436;
+var bg2_x = 436*ResX;
 var menu_setup = 1;
 var poemText = false;
 //Poem Game Variables
@@ -13,10 +13,10 @@ var m_stickerX = 10;
 var n_stickerX = 55;
 var y_stickerX = 100;
 var s_stickerX = 145;
-var logo_y = -100;
-var girls_y = 600;
-var girls2_y = 600;
-var sidebar_x = -500;
+var logo_y = -100*ResY;
+var girls_y = 600*ResY;
+var girls2_y = 600*ResY;
+var sidebar_x = -500*ResX;
 var x;
 var yt;
 var splash = 0;
@@ -123,7 +123,7 @@ var charSpeaking = ["Monika?"
 					,charName
 					,charName
 					,"Sayori"];
-var black_x = 600;
+var black_x = 600*ResX;
 var scene1 = false;
 var dialog = "";
 var dialog2 = "";
@@ -276,7 +276,7 @@ function drawLogo(){
 		bg2_x = 436;
 	}
 	drawImg("main_menu",sidebar_x,0);
-	drawImg("logo",80,logo_y);
+	drawImg("logo",110*ResX,-5*ResY);
 	logo_y += 1;
 	if(logo_y >= -5){
 		clearInterval(x);
@@ -296,19 +296,19 @@ function drawGirls(){
 	if(bg2_x+436 <= 0){
 		bg2_x = 436;
 	}
-	drawImg("menu_art_y",200,girls_y);
+	drawImg("menu_art_y",500*ResX,girls_y);
 	if(isDead == 1){
-		drawImg("menu_art_s_break",180,girls2_y);
+		drawImg("menu_art_s_break",350*ResX,girls2_y);
 	}else{
-		drawImg("menu_art_s",180,girls2_y);
+		drawImg("menu_art_s",350*ResX,girls2_y);
 	}
-	drawImg("menu_art_n",285,girls_y);
-	drawImg("menu_art_m",340,girls2_y);
+	drawImg("menu_art_n",650*ResX,girls_y+50);
+	drawImg("menu_art_m",700*ResX,girls2_y);
 	drawImg("main_menu",sidebar_x,0);
-	drawImg("logo",80,logo_y);
+	drawImg("logo",110*ResX,-5*ResY);
 	girls_y -= 1;
 	girls2_y -= .9;
-	if(girls_y <= 60 && girls2_y <= 130){
+	if(girls_y <= 60*ResY && girls2_y <= 130*ResY){
 		menu_setup = 0;
 		clearInterval(x);
 		x = setInterval(drawMenu,1);
@@ -321,44 +321,44 @@ function drawMenu(){
 	drawImg("background",bg2_x,0);
 	drawImg("main_menu",sidebar_x,0);
 	if(menu_option == 1){
-		drawImg("play_blue",20,150);
-		drawImg("settings",20,220);
+		drawImg("play_blue",20*ResX,300*ResY);
+		drawImg("settings",20*ResX,370*ResY);
 	}else if(menu_option == 2){
-		drawImg("play",20,150);
-		drawImg("settings_blue",20,220);
+		drawImg("play",20*ResX,300*ResY);
+		drawImg("settings_blue",20*ResX,370*ResY);
 	}else{
-		drawImg("play",20,150);
-		drawImg("settings",20,220);
+		drawImg("play",20*ResX,300*ResY);
+		drawImg("settings",20*ResX,370*ResY);
 	}
-	drawImg("logo",80,-5);
-	drawImg("menu_art_y",200,girls_y);
+	drawImg("logo",110*ResX,-5*ResY);
+	drawImg("menu_art_y",500*ResX,girls_y);
 	if(isDead == 1){
-		drawImg("menu_art_s_break",180,girls2_y);
+		drawImg("menu_art_s_break",350*ResX,girls2_y);
 	}else{
-		drawImg("menu_art_s",180,girls2_y);
+		drawImg("menu_art_s",350*ResX,girls2_y);
 	}
-	drawImg("menu_art_n",285,girls_y);
-	drawImg("menu_art_m",340,girls2_y);
-	bg_x -= 0.1;
-	bg2_x -= 0.1;
-	bg_y -= 0.1;
-	if(bg_x+436 <= 0){
-		bg_x = 436;
+	drawImg("menu_art_n",650*ResX,girls_y+50);
+	drawImg("menu_art_m",700*ResX,girls2_y);
+	bg_x -= 0.1*ResX;
+	bg2_x -= 0.1*ResX;
+	bg_y -= 0.1*ResY;
+	if(bg_x+436*ResX <= 0){
+		bg_x = 436*ResX;
 	}
-	if(bg2_x+436 <= 0){
-		bg2_x = 436;
+	if(bg2_x+436*ResX <= 0){
+		bg2_x = 436*ResX;
 	}
 	if(next == 1){
-		black_x -= 2;
-		drawRect(black_x,0,500,400,"#000000");
+		black_x -= 2*ResX;
+		drawRect(black_x*ResX,0,1280*ResX,720*ResY,"#000000");
 		if(black_x == 0 || black_x < 0){
 			audio("1","stop");
 			audio("2","play");
 			drawImg("residential",0,0);
-			drawRect(black_x,0,500,400,"#000000");
+			drawRect(black_x*ResX,0,1280*ResX,720*ResY,"#000000");
 		}
-		if(black_x < -600){
-			black_x = 600;
+		if(black_x < -600*ResX){
+			black_x = 600*ResX;
 			clearInterval(x);
 			x = setInterval(drawScene1,1);
 		}
@@ -508,57 +508,49 @@ function drawScene1(){
 	//audio("2","play");
 	drawImg("residential",0,0);
 	if(next > 7 && next <= 9){
-		animations("Sayori",50,0,"frustrated","fadeIn");
+		animations("Sayori",150*ResX,0,"frustrated","fadeIn");
 	}
 	if(next > 9){
-		animations("Sayori",50,0,"happy",null);
+		animations("Sayori",150*ResX,0,"happy",null);
 	}
-	drawImg("namebox",45,300);
 	drawTextBox();
-	if(next == 26){
-		scene1 = false;
-		black_x -= 2;
-		drawRect(black_x,0,500,400,"#000000");
-		if(black_x == 0 || black_x < 0){
-			document.body.setAttribute("style","background-image: url('images/bg/background2.png')");
-			audio("2","stop");
-			audio("3","play");
-			drawImg("class",0,0);
-			drawRect(black_x,0,500,400,"#000000");
-		}
-		if(black_x < -600){
-			alpha = 0;
-			black_x = 600;
-			dialog = "";
-			dialog2 = "";
-			textScroll = 0;
-			next++;
-			clearInterval(x);
-			x = setInterval(drawScene2,1);
-		}
+	blackTrans(26,2,2,3,"class");
+	if(black_x < -1280*ResX){
+		
 	}
 }
 
-function blackTrans(nextValue,nextScene,audioTrack,sceneBG){
+function blackTrans(nextValue,nextScene,audioTrack,audioTrack2,sceneBG){
 	if(next == nextValue){
 		scene1 = false;
-		black_x -= 2;
-		drawRect(black_x,0,500,400,"#000000");
+		black_x -= 5;
+		console.log(black_x);
+		drawRect(black_x*ResX,0,1280*ResX,720*ResY,"#000000");
 		if(black_x == 0 || black_x < 0){
 			audio(audioTrack,"stop");
-			audio(audioTrack,"play");
+			audio(audioTrack2,"play");
 			drawImg(sceneBG,0,0);
-			drawRect(black_x,0,500,400,"#000000");
+			drawRect(black_x*ResX,0,1280*ResX,720*ResY,"#000000");
 		}
-		if(black_x < -600){
+		if(black_x < -1280*ResX){
 			alpha = 0;
-			black_x = 600;
+			black_x = 1280*ResX;
 			dialog = "";
 			dialog2 = "";
 			textScroll = 0;
 			next++;
 			clearInterval(x);
-			x = setInterval(drawScene2,1);
+			if(nextValue == 26){
+				x = setInterval(drawScene2,1);
+			}else if(nextValue == 1){
+				x = setInterval(drawScene1,1);
+			}else if(nextValue == 54){
+				x = setInterval(drawScene3,1);
+			}else if(nextValue == 56){
+				x = setInterval(drawScene4,1);
+			}else if(nextValue == 56){
+				x = setInterval(drawScene4,1);
+			}
 		}
 	}
 }
@@ -569,7 +561,6 @@ function drawScene2(){
 	if(next >= 30){
 		animations("Sayori",50,0,"happy","fadeIn");
 	}
-	drawImg("namebox",45,300);
 	drawTextBox();
 	if(next == 54){
 		scene1 = false;
@@ -603,7 +594,6 @@ function drawScene3(){
 		animations("Natsuki",240,0,"happy","fadeIn");
 		animations("Monika",-130,0,"happy","fadeIn");
 	}
-	drawImg("namebox",45,300);
 	drawTextBox();
 	if(next == 56){
 		scene1 = false;
@@ -629,24 +619,25 @@ function drawScene3(){
 }
 
 function drawTextBox(){
-	drawImg("textbox",25,320); //Can hold 45 characters per line
-	drawText(charSpeaking[next],65,315,"18px","#ff00c3",2);
-	if(textScroll <= 45){
+	drawImg("namebox",252*ResX,534*ResY);
+	drawImg("textbox",232*ResX,554*ResY); //Can hold 45 characters per line
+	drawText(charSpeaking[next],272*ResX,549*ResY,"18px","#ff00c3",2);
+	if(textScroll <= 80*ResX){
 		var textChar = scripts[next].slice(textScroll,textScroll+1);
 		dialog = dialog + textChar;
-		drawText(dialog,30,350,"24px","#000000",4);
+		drawText(dialog,237*ResX,594*ResY,"24px","#000000",4);
 		textScroll++;
 	}else{
-		drawText(dialog,30,350,"24px","#000000",4);
+		drawText(dialog,237*ResX,594*ResY,"24px","#000000",4);
 	}
-	if(scripts[next].length > 45 && textScroll >= 45 && textScroll <= 90){
+	if(scripts[next].length > 80*ResX && textScroll >= 80*ResX && textScroll <= 90*ResX){
 		var textChar2 = scripts[next].slice(textScroll,textScroll+1);
 		dialog2 = dialog2 + textChar2;
-		drawText(dialog2,30,375,"24px","#000000",4);
+		drawText(dialog2,237*ResX,619*ResY,"24px","#000000",4);
 		textScroll++;
 	}else{
 		if(dialog2 != null){
-			drawText(dialog2,30,375,"24px","#000000",4);
+			drawText(dialog2,237*ResX,619*ResY,"24px","#000000",4);
 		}
 	}
 }
@@ -845,20 +836,25 @@ function drawScene4(){
 	}
 }
 
+function video_buffer(){
+	video_length= setInterval(video,5000);
+	audio("d","play");
+}
+
+
 function drawSceneSKill(){
 	scene1 = true;
 	console.log(next);
 	if(next < 61){
 		background("#000000");
-		drawImg("namebox",45,300);
 		drawTextBox();
 	}
 	if(next >= 61){
 		isDead = 1;
-		drawImg("s_kill_bg",0,0);
-		drawImg("s_kill",100,0);
-		audio("d","play");
-		setTimeout(SKill2,11000);
+		//drawImg("s_kill_bg",0,0);
+		//drawImg("s_kill",100,0);
+		video_buffer();
+		
 	}
 }
 
